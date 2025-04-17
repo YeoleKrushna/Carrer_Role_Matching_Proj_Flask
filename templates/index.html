@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Role Matching System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Career Role Matching System</h1>
+        <p>Please select the skills you possess below:</p>
+        <form method="POST" action="/result" class="skill-form">
+            {% for category, skill_list in skills.items() %}
+                <div class="skill-category">
+                    <h3>{{ category }}</h3>
+                    <div class="skill-grid">
+                        {% for skill in skill_list %}
+                            <div class="skill-checkbox">
+                                <input type="checkbox" id="{{ skill }}" name="skills" value="{{ skill }}">
+                                <label for="{{ skill }}">{{ skill }}</label>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+            <button type="submit">Match Role</button>
+        </form>
+    </div>
+</body>
+</html>
