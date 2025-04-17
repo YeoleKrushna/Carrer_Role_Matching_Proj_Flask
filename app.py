@@ -124,7 +124,7 @@ skill_categories = {
     "Cybersecurity & Networking": {"Penetration Testing", "Firewalls", "Encryption", "Network Security", "Vulnerability Management", "TCP/IP", "DNS", "HTTP", "Routing", "Switching", "Cisco"},
     "UI/UX & Tools": {"Adobe XD", "Figma", "Wireframing", "Prototyping", "User Research", "Usability Testing"},
     "Testing & Automation": {"Automation Testing", "Selenium", "Jenkins", "Bug Tracking", "Test Plans"},
-    "Others": {"Excel", "Agile", "Scrum", "Product Roadmaps", "User Stories", "Stakeholder Management", "Spring", "Hibernate", "Linux", "Windows Server", "Networking", "Cloud Computing", "Virtualization", "Scripting", "Salesforce", "Apex", "Visualforce", "Lightning", "SEO", "Google Analytics", "Keyword Research", "Link Building", "Content Optimization"}
+    "Others": {"Excel", "Agile", "Scrum", "Product Roadmaps", "User Stories", "Stakeholder Management", "Hibernate", "Linux", "Windows Server", "Networking", "Cloud Computing", "Virtualization", "Scripting", "Salesforce", "Apex", "Visualforce", "Lightning", "SEO", "Google Analytics", "Keyword Research", "Link Building", "Content Optimization"}
 }
 
 

@@ -21,6 +21,14 @@ body {
     animation: slideUp 0.7s ease-out forwards;
 }
 
+.container p {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+
 /* Animations */
 @keyframes slideUp {
     0% {
@@ -173,6 +181,7 @@ a:hover {
     margin-top: 30px;
     animation: fadeIn 1.5s ease-in-out;
     text-align: center;
+
 }
 
 .result-section p {
@@ -244,38 +253,68 @@ input:focus, select:focus {
 }
 
 /* Responsive Styling */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .container {
         width: 90%;
-        padding: 20px;
+    }
+
+    .skill-grid {
+        flex-direction: column;
+        align-items: center;
     }
 
     .skill-checkbox label {
-        font-size: 14px;
-        padding: 10px 14px;
+        width: 100%;
     }
 
     button {
-        font-size: 16px;
-        padding: 10px 20px;
+        width: 100%;
+    }
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        margin: auto;
     }
 
-    .result-section .role {
-        font-size: 1.2em;
-        padding: 15px;
+    .skill-grid {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    .result-section .advice {
-        font-size: 1em;
-        padding: 15px;
+    .skill-checkbox label {
+        width: 100%;
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 768px) {
     .container {
-        width: 95%;
-        padding: 15px;
-        margin-top: 20px;
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .skill-grid {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skill-checkbox label {
+        width: 100%;
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
     }
 
     h1 {
@@ -286,60 +325,60 @@ input:focus, select:focus {
         font-size: 1.5em;
     }
 
-    .skill-checkbox label {
-        width: 100%;
-        font-size: 14px;
-        padding: 10px 12px;
-    }
-
-    button {
-        width: 100%;
-        font-size: 16px;
-        padding: 12px 25px;
-    }
-
-    .result-section .role {
-        font-size: 1.1em;
-        padding: 20px;
+    .result-section p {
+        font-size: 1em;
     }
 
     .result-section .advice {
-        font-size: 0.9em;
-        padding: 20px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .result-section .role {
+        font-size: 1.2em;
+        text-align: center;
     }
 }
 
 @media screen and (max-width: 480px) {
     .container {
-        width: 100%;
-        padding: 10px;
+        width: 95%;
+        padding: 15px;
+        margin: auto;
+    }
+
+    .skill-checkbox label {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    button {
+        font-size: 16px;
     }
 
     h1 {
         font-size: 1.8em;
+        text-align: center;
     }
 
     h3 {
         font-size: 1.4em;
+        text-align: center;
     }
 
-    .skill-checkbox label {
-        font-size: 13px;
-        padding: 8px 12px;
-    }
-
-    button {
-        font-size: 14px;
-        padding: 12px 20px;
-    }
-
-    .result-section .role {
-        font-size: 1em;
-        padding: 15px;
+    .result-section p {
+        font-size: 0.9em;
+        text-align: center;
     }
 
     .result-section .advice {
-        font-size: 0.9em;
         padding: 15px;
+        text-align: center;
+    }
+
+    .result-section .role {
+        font-size: 1.2em;
+        text-align: center;
     }
 }
+
